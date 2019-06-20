@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    </head>
+    <title>进入/离开 & 列表过渡</title>
+    <body>
+
+        <h3>单元素/组件的过渡</h3>
+        <div id="demo">
+            <button v-on:click="show =! show">
+                Toggle
+            </button>
+            <transition name="fade">
+                <p v-if="show">hello</p>
+            </transition>
+        </div>
+       
+
+       <script src="index.js"></script>
+
+    </body>
+
+</html>
